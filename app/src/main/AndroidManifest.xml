@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.nirajan.vegcartpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/vegetable_logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/vegetable_logo"
+        android:roundIcon="@drawable/vegetable_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="in.nirajan.vegcartpro.activity.CartActivity"
+            android:exported="false"/>
+        <activity
+            android:exported="false"
+            android:name="in.nirajan.vegcartpro.activity.CategoryItemActivity"
+            android:theme="@style/AppTheme.NoActionBarStyle" />
+        <activity
+            android:exported="true"
+            android:name="in.nirajan.vegcartpro.activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.nirajan.vegcartpro.activity.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBarStyle" />
+        <activity android:name="in.nirajan.vegcartpro.activity.HomeActivity"
+            android:exported="false"/>
+        <activity
+            android:exported="false"
+            android:name="in.nirajan.vegcartpro.activity.OrderActivity"
+            android:theme="@style/AppTheme.NoActionBarStyle" />
+        <activity
+            android:exported="false"
+            android:name="in.nirajan.vegcartpro.activity.FlowerVegActivity"
+            android:theme="@style/AppTheme.NoActionBarStyle" />
+        <activity
+            android:exported="false"
+            android:name="in.nirajan.vegcartpro.activity.ContactActivity"
+            android:theme="@style/AppTheme.NoActionBarStyle" />
+        <activity
+            android:exported="false"
+            android:name="in.nirajan.vegcartpro.activity.MyCartActivity"
+            android:theme="@style/AppTheme.NoActionBarStyle" />
+
+        <meta-data
+            android:exported="false"
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:exported="false"
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+    </application>
+
+</manifest>
